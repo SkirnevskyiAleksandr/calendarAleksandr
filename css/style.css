@@ -1,0 +1,614 @@
+.strike {
+    text-decoration: line-through;
+}
+
+.material-icons {
+    cursor: pointer;
+}
+
+th, td {
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#sortByDate {
+    display: block;
+    width: 100%;
+}
+
+/* ===================================== Aleksandr ====================================== */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Rowdies&family=Titillium+Web&display=swap"); */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+.todo-input {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    row-gap: 1rem;
+}
+
+.todoTable-block {
+    margin-top: 1rem;
+}
+
+.pagination-pages {
+    text-align: right;
+}
+
+.pagination-pages>* {
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.material-icons {
+    cursor: pointer;
+}
+
+::-ms-input-placeholder {
+    color: #7EC2DC;
+}
+
+::-webkit-input-placeholder {
+    color: #7EC2DC;
+}
+
+::placeholder {
+    color: #7EC2DC;
+}
+
+input {
+    color:  #00467A;
+}
+
+h3 {width: max;
+    height: 58px;
+    font-family: HelveticaNeue;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.1px;
+    text-align: center;
+    color: #6c757d;
+    border-radius: 12px;
+    box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.07);
+    background-color: #ffffff;
+}
+
+body {
+    /* font-family:"Titillium Web", sans-serif; */
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #d6e6f9;
+}
+
+.todo-block {
+    border: 1px solid  #00467A;
+    padding: 1rem;
+    border-radius: 20px;
+    color:  #00467A;
+}
+
+#date, #time, #nazva, #allCategory {
+    /* border-radius: 10px; */
+    background-color: #00467A;
+    color: white;
+}
+
+#categoryFilter {
+  background-color:white;
+  border-radius: 10px;
+  font-family: HelveticaNeue;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.19px;
+  color: #007bff;
+}
+
+#done {
+    background-color: green;
+    color: white;
+    min-width: 75px;
+}
+
+#nazva{
+    min-width: 280px;
+}
+
+
+#edit, #delete{
+    background-color: #d0021b;
+    font-family: HelveticaNeue;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+#allCategory{
+    min-width: 280px;
+}
+
+
+#date{
+    min-width: 160px;
+}
+
+#time{
+    min-width: 70px;
+}
+
+
+#todoTable {
+    margin-top: 1rem;
+}
+
+/* .todo-overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: #dddddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100vw);
+    transition: transform 250ms;
+    z-index: 2;
+}
+
+.todo-modal {
+    min-width: 50vw;
+    height: 50vh;
+    border: 1px solid green;
+    background-color: #ffd6cc;
+}
+
+.todo-modal-close-btn {
+    background-color: red;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+}
+
+.slidedIntoView {
+    transform: translateX(0);
+    transition: transform 650ms;
+}
+
+#todoTable tr:nth-child(even) {
+    background-color: #ffd6cc;
+} */
+
+button {
+    background-color: #025B86;
+    color: #99CCD1;
+    border: 1px outset #01467A;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #01467A;
+}
+
+.chevron {
+    transform: translateY(0.4rem);
+}
+
+.itemsPerPage {
+    text-align: right;
+    margin-bottom: 0.5rem;
+}
+
+/* input border radius*/
+
+#inpEvent, #inpCategory, #dateInput, #timeInput {
+    border-radius: 5px;
+    border-color: #0146;
+}
+
+.flexContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 -15px;
+}
+
+.panel {
+    margin: 0 15px;
+    width: 30%;
+}
+
+.panel-popup{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.calendar-wrapper {
+    margin: 0 15px;
+    width: 70%;
+}
+
+.fc-button {
+    padding: 0 5px!important;
+}
+
+.fc .fc-button{
+    font-size: 0.8em!important;
+}
+
+.table-wrapper {
+    overflow: auto;
+    width: 100%;
+}
+
+#eventManagePanel{
+    display: block;
+    overflow: auto;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .fc .fc-toolbar{
+        flex-direction: column!important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .flexContainer {
+        flex-wrap: wrap;
+    }
+    .panel {
+        order: 2;
+        width: 100%;
+    }
+    .calendar-wrapper {
+        order: 1;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .fc .fc-daygrid-week-number{
+        display: none!important;
+    }
+}
+
+
+/* @media screen and (max-width: 767px){
+
+    #todoTable, .calendar{
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width:768px){
+
+    .todo-grid-parent{
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        column-gap: 1rem;
+    }
+
+    
+    
+    #calendar{
+        position: sticky;
+        top: 0;
+
+    }
+} */
+
+/*Aleksaner 17.10.20*/
+#main{
+    background:#d6e6f9;
+}
+
+#k1,#k2, #k3{border-radius: 20px;
+    box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.07);
+    background-color: #ffffff;}
+
+#k2 span{font-family: HelveticaNeue;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.1px;
+   
+    color: #6c757d;}    
+
+
+#inpEvent, #inpCategory,
+ #dateInput, #timeInput {
+  border-radius: 6px;
+  border: solid 1px #007bff;
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: center;
+  color: #007bff; 
+ }   
+
+ #addBtn,#sortByDateBtn{
+    background-color: #007bff;
+    font-family: HelveticaNeue;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+ }
+ #edone{
+     background: #58cb7d;
+     font-family: HelveticaNeue;
+     font-weight: bold;
+     font-size: 14px;
+     font-style: normal;
+     font-stretch: normal;
+     letter-spacing: -0.22px;
+     line-height: normal;
+     color: #ffffff;
+     border-radius: 4px;
+ }
+ #date,#tim,#nazva,#allCategory{
+    
+    background-color: #007bff;
+    font-family: HelveticaNeue;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+ } 
+ 
+ 
+
+ /*Aleksandr 17.10  17-30*/
+
+ #inpTitle{
+     display: block;
+    width: 148px;
+    height: 24px;
+    font-family: HelveticaNeue;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #6c757d !important;
+    border: none;
+ }
+
+ #inpText{
+     display: block;
+     border: none;
+ }
+ #datePopup{
+    display: block;
+    text-align: left;
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.25px;
+  color: #8a888a;
+ }
+ #timeInputStart,#timeInputEnd,#allDay{margin-right: 20px;
+    text-align: left;
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.25px;
+  color: #8a888a;
+     
+ }
+
+ .timeStartLeft{text-align: left;
+}
+
+ #popUpAdd{
+    position: absolute;
+    right: 20px;
+    width: 82px;
+    width: 114px;
+    height: 38px;
+    border-radius: 4px;
+    background-color: #007bff;
+    color:#ffffff;
+    font-family: HelveticaNeue;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+/*  .BtnDelSave{
+    bottom: 0% !important;
+    padding: 0%;
+    margin: 0%; 
+} */
+
+  #popUpSave{display: inline !important;
+    right: 10px;
+    position: absolute;
+    width: 114px !important;
+    height: 38px !important;
+    border-radius: 4px;
+    background-color: #007bff;
+    color:#ffffff;
+    font-family: HelveticaNeue;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  
+} 
+
+#popUpDelete{display: inline !important;
+left: 0;
+position: absolute;font-family: HelveticaNeue;
+font-size: 14px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: normal;
+letter-spacing: -0.22px;
+text-align: center;
+color: #d0021b;
+width: 53px;
+height: 16px;
+}  
+
+ .container{
+    background: #ffffff;
+    border-radius: 20px;
+    margin: 100px;
+
+} 
+#calendar{ width: 100% !important;}
+.calendar-wrapper.d-flex{
+    width: 100% !important;
+}
+
+.heder{
+    display: flex;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background:#ffffff;
+    margin:70px !important;
+    padding:16px !important;   
+}
+
+.month{
+  display:flex;
+  text-align: center;
+  margin: auto !important;
+  width: 115px;
+  height: 50px;
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.1px;
+  text-align: center;
+  color: #6c757d;
+}
+.item{display: flex;
+height: 50px;}
+
+.btn.btn-outline-dark{
+  width: 86px;
+  height: 38px;
+  border-radius: 6px;
+  border: solid 1px #efefef;
+  margin-right:20px;
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: center;
+  color: #6c757d;
+}
+
+.btn.btn-outline-secondary{
+ width: 240px;
+  height: 38px;
+  border-radius: 6px;
+  border: solid 1px #007bff;
+  color:#007bff;
+  margin-right:20px;
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.btn.btn-link{
+    font-family: HelveticaNeue;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.22px;
+  text-align: center;
+  color: #d0021b;
+}
+
+
+.fc-col-header-cell-cushion {
+    font-family: HelveticaNeue;
+    font-size: 10px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.21px;
+    text-align: center;
+    color: #6c757d;}
+
+
+    .btn-circle {
+        width: 14px;
+        height: 14px;
+        border-radius: 19px;
+        text-align: center;
+        padding-left: 0;
+        padding-right:0px;
+        font-size: 16px;
+        margin: 15px;
+
+    }
