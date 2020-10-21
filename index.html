@@ -31,16 +31,11 @@
 
     <!-- Own Styles -->
     
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fullcalendarcastom.css">
-    <!-- Aleksandr owlCarusel-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fullcalendarcastom.css">
     <style>
         #zatemnenie {
             /* background: rgba(102, 102, 102, 0.5); */
-            
             width: 100%;
             height: 100%;
             position: absolute;
@@ -54,9 +49,7 @@
             width: 500px;
             height: 327px;
             text-align: center;
-            /* padding: 15px; */
-            padding-left: 35px;
-            padding-top: 40px;
+            padding: 15px;
             border-radius: 10px;
             position: absolute;
             top: 0;
@@ -64,8 +57,10 @@
             bottom: 0;
             left: 0;
             margin: auto;
-            background: #ffffff;
+            background: #fff;
+            padding: 40px 35px 15px 35px;
             box-shadow: 0 2px 60px 0 rgba(0, 0, 0, 0.37);
+  background-color: #ffffff;
         }
     
         #zatemnenie:target {
@@ -73,90 +68,102 @@
         }
     
         .closert {
-            position: absolute;
-            width: 9px;
-            height: 9px;
-            top:10px;
-            right: 30px;
-
+            display: inline-block;
+            border: 1px solid #0000cc;
+            color: #0000cc;
+            padding: 0 12px;
+            margin: 10px;
+            text-decoration: none;
+            background: #f2f2f2;
+            font-size: 14pt;
+            cursor: pointer;
         }
     
         .closert:hover {
-            background: #e6e6ff;
-        }
+            background-color: #e6e6ff;}
+
+           /*Aleksandr 21.10.20*/
+           .monthcarusel {
+    width: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    letter-spacing: -0.1px;
+    text-align: center;
+    align-self: center;
+    margin: auto;
+    text-transform: capitalize;
+}
+
+.gmail {
+        display: flex;
+         min-width: 100px !important;
+        height: 38px;
+        flex-wrap: nowrap;
+        border: solid 1px;
+        border-radius: 10px;
+        border-color: #007bff;
+        padding: 9px 16px;
+        /* margin-right: 132px; */
+        cursor: pointer;
+        transition: box-shadow 0.3s;}
+ 
+        
     </style>
 </head>
 
 <body>
-   
-<div>
     <div id="zatemnenie">
         <div id="okno">
-            <input id="inpTitle" placeholder="Добавьте название"></input>
-            <hr></hr>
-            <input id="inpText" placeholder="Добавьте описание"></input>
-            <hr></hr>
-            <span id="datePopup"></span>
-            <div class="timeStartLeft">
-                <input id="timeInputStart" type="time"></input>
-                <input id="timeInputEnd" type="time"></input>
-            <span>
+            <img class="img-exit" id="closePopup" src="./images/exit.svg">
+        
+            <input id="inpTitle" class="addname" placeholder="Добавьте название"></input>
+            <hr>
+            </hr>
+            <input id="inpText" class="adddesc" placeholder="Добавьте описание"></input>
+            <hr>
+            </hr>
+            
+            
+            <div class="time-select">
+                <span id="datePopup" class="date-popup"></span>
+                <input id="timeInputStart" class="timepick" type="time"></input>
+                <input id="timeInputEnd" class="timepick"  type="time"></input>
                 <input id="checkbox" type="checkbox" name="allDay"></input>
-                <label for="allDay">Весь день</label>
-            </span>
+                <label for="allDay" class="allday">Весь день</label>
             </div>
             
-        <div class="BtnDelSave">
-            
-                <span id="popUpAdd">Добавить</span>
-                <span id="popUpDelete"><button type="button" class="btn btn-link">Удалить</button></span>
-            
-            <span id="popUpSave"><button type="button" class="btn btn-primary">Сохранить изминения</button></span>
+        <div class="popupfooter">
+            <span id="popUpDelete" class="pdelete">Удалить</span>
+            <span id="popUpSave" class="psave">Сохранить</span>
+            <span id="popUpAdd" class="padd">Добавить</span>
         </div>
             
-            <button id="closePopup" class="closert"><img class="img-fluid" src="./images/x.png"></button>
-        </div>С
+            <!-- <button id="closePopup" class="closert">Закрыть окно</button> -->
+        </div>
     </div>
-    <div class="heder"> 
-       
-        <button type="button" class="btn btn-outline-dark">Сегодня</button>
-        <a href="https://mail.google.com/" class="btn btn-outline-secondary" role="button" aria-pressed="true">Синхронизировать с Gmail <img src="./images/gmail.jpg"></a>
-       
-        <div class="month">
-            <div class="owl-carousel">
-                <div class="item"><h4>Сентябрь 2020 </h4></div>
-                <div class="item"><h4>Октябрь 2020</h4></div>
-                <div class="item"><h4>Ноябрь 2020</h4></div>
-                <div class="item"><h4>Декабрь 2020</h4></div>
-                <div class="item"><h4>Январь 2021</h4></div>
-                <div class="item"><h4>Февраль 2021</h4></div>
-                <div class="item"><h4>Март 2021</h4></div>
-                <div class="item"><h4>Апрель 2021</h4></div>
-                <div class="item"><h4>Май 2021</h4></div>
-                <div class="item"><h4>Июнь 2021</h4></div>
-                <div class="item"><h4>Июль 2021</h4></div>
-                <div class="item"><h4>Август 2021</h4></div>
-            </div>
-        </div> 
-        <button type="button" class="btn btn-primary btn-circle"><i class="fas fa-map"></i></button>
-        <button type="button" class="btn btn-success btn-circle"><i class="fas fa-map"></i></button>
-        <button type="button" class="btn btn-danger btn-circle"><i class="fas fa-map"></i></button>
-     </div>   
-    <div class="container py-3">
-          
-        <div class="row my-3 px-3">
-            <!-- <span id="today">Сегодня</span> -->
-            <div>
-                <div>
-                    <span id="authorize_button" style="display: none;">Додати Google Календар</span>
-                    <span id="signout_button" style="display: none;">Видалити Google Календар</span>
+
+    <div class="container">
+
+        <div class="wrapper">
+            
+            <div class="topline">
+                
+                    <span id="today" class="today">Сегодня</span>
+                <div class="gmail">
+                    <span id="authorize_button" class="google-button" style="display: none;">Синхронизировать с Gmail</span>
+                    <span id="signout_button" class="google-button" style="display: none;">Отвязать Gmail</span>
                     <!-- <span id="gmail" style="display: none;"></span> -->
-                    <img src="./images/gmail.jpg">
+                    <img class="img-google" src="./images/gmail.jpg">
+                    
                 </div>
-            <span id=prevMonth> &lt;&nbsp;&nbsp; </span>
-            <span id="dateCalendar"></span>
-            <span id=nextMonth> &nbsp;&nbsp;&gt; </span>
-            <span></span>
+                <div class="monthcarusel">
+                <img id=prevMonth class="arrowbtn" src="./images/arrowL.svg"></img>
+                <span id="dateCalendar" class="month"></span>
+                <img id=nextMonth class="arrowbtn" src="./images/arrowR.svg"></img>
+            </div>
+            
+            
         </div>
 
         <div class="flexContainer mb-3">
@@ -171,8 +178,8 @@
     </div>
 
     <script defer src="fullcalendar-5.3.2/lib/main.min.js"></script>
-    <script defer src="fullcalendar-5.3.2/lib/locales/uk.js"></script>
-    <script src="js/googleaddupdate.js" type="text/javascript"></script>
+    <script defer src="fullcalendar-5.3.2/lib/locales/ru.js"></script>
+    <script src="./js/googleaddupdate.js" type="text/javascript"></script>
     <script defer src="js/app.js"></script>
         <!-- <script src="js/popUp.js"></script> -->
 
@@ -180,15 +187,7 @@
     <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()"
         onreadystatechange="if (this.readyState === 'complete') this.onload()">
     </script>
-
-    <!--Aleksandr owlCarusel-->
-
-
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="./bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="./js/main.js"></script>
+    
 </body>
 
 </html>
