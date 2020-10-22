@@ -406,3 +406,44 @@ button:hover {
         /* margin-right: 132px; */
         cursor: pointer;
         transition: box-shadow 0.3s;}
+
+    
+        .calendar-wrapper{
+            width:100%;
+        }        
+
+        .calendar-wrapper{
+            border-radius: 20px;
+        }
+.fc-col-header-cell-cushion{
+font-size: 1vw;
+}      
+
+.today{
+    font-size: 1vw;
+    width: auto;
+}
+.month{
+    font-size:1vw;
+}
+
+.gmail {
+    display: flex;
+    height: 38px;
+    flex-wrap: wrap;
+    border: solid 1px;
+    border-radius: 10px;
+    border-color: #007bff;
+    padding: 9px 16px;
+    /* margin-right: 132px; */
+    cursor: pointer;
+    transition: box-shadow 0.3s;}
+.google-button{
+    font-size: 1vw;
+}    
+
+.img-google{
+    font-size: 1vw;
+}
+.topline{
+border: 1px solid #00467A;}

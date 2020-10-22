@@ -30,9 +30,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!-- Own Styles -->
-    
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/fullcalendarcastom.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
     <style>
         #zatemnenie {
             /* background: rgba(102, 102, 102, 0.5); */
@@ -93,20 +93,12 @@
     align-self: center;
     margin: auto;
     text-transform: capitalize;
+    padding: 5px;
 }
 
-.gmail {
-        display: flex;
-         min-width: 100px !important;
-        height: 38px;
-        flex-wrap: nowrap;
-        border: solid 1px;
-        border-radius: 10px;
-        border-color: #007bff;
-        padding: 9px 16px;
-        /* margin-right: 132px; */
-        cursor: pointer;
-        transition: box-shadow 0.3s;}
+
+.fc-col-header-cell-cushion {display: flex;
+word-wrap:break-word;}        
  
         
     </style>
@@ -151,10 +143,11 @@
                 
                     <span id="today" class="today">Сегодня</span>
                 <div class="gmail">
-                    <span id="authorize_button" class="google-button" style="display: none;">Синхронизировать с Gmail</span>
+                    <img class="img-google" src="./images/gmail.jpg">
+                    <span id="authorize_button" class="google-button" >Синхронизировать с Gmail</span>
                     <span id="signout_button" class="google-button" style="display: none;">Отвязать Gmail</span>
                     <!-- <span id="gmail" style="display: none;"></span> -->
-                    <img class="img-google" src="./images/gmail.jpg">
+                    
                     
                 </div>
                 <div class="monthcarusel">
