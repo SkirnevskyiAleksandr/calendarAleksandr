@@ -239,10 +239,7 @@ button:hover {
     margin: 0 auto;
 }
 
-.calendar-wrapper {
-    margin: 0 15px;
-    width: 70%;
-}
+
 
 .fc-button {
     padding: 0 5px!important;
@@ -408,12 +405,10 @@ button:hover {
         transition: box-shadow 0.3s;}
 
     
-        .calendar-wrapper{
-            width:100%;
-        }        
-
-        .calendar-wrapper{
-            border-radius: 20px;
+.calendar-wrapper{
+     width:100%;
+     margin: 0 15px;
+    border-radius: 20px;
         }
 .fc-col-header-cell-cushion{
 font-size: 1vw;
